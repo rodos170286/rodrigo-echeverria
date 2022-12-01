@@ -1,0 +1,274 @@
+//parapantalla computadora//
+@media screen and (min-width:1024px){
+        // esilos de home//
+    .home{
+        .recortes{
+            margin: 30px;
+            display: flex;
+            flex-direction: column;   
+            img{
+                margin-top: 10px;
+            }         
+       }
+       .recorte{
+           display: none;
+          
+       }
+   }
+
+   // estilos de acerca de mi//
+   .acerca{
+    h2{
+        text-align: center;
+        font-size: $size-h2;
+        margin-bottom: 20px;
+        text-decoration: underline;
+
+    }
+    .descripcion-uno{
+        display: none;
+        
+          
+    }
+    .descripcion{
+        
+        display: block;
+        gap: 20px;
+        @include estilogrid;       
+        grid-template-areas:
+        "des-uno des-dos"
+        "des-tres des-tres";
+        .des-uno{
+            grid-area: des-uno;
+            display: block;
+            width:600px;
+            height: 500px;
+            justify-self: center;
+            
+           
+            
+          
+            
+        }
+        .des-dos{
+            grid-area: des-dos;
+            display: block;
+            width: 600px;
+            height:500px;
+            justify-self: center;
+            
+            
+
+
+        }
+           
+        .des-tres{
+            grid-area: des-tres;
+            margin-bottom: 20px;
+           
+        }
+    }
+
+   
+  }
+
+  //galeria estilo para escritorio//
+
+  .galeria {
+    
+    column-gap: 30px;
+    @include estilogrid; 
+    grid-template-areas:
+    "h2-galeria h2-galeria h2-galeria" 
+    "h3-a h3-r h3-p"
+    "img-a img-r img-p";
+   
+   
+
+ .h2-galeria{
+    grid-area: h2-galeria;
+    
+  
+}
+ .h3-a{
+    grid-area:h3-a ;
+}
+ .h3-r{
+    grid-area:h3-r;
+}
+.h3-p{
+    grid-area:h3-p ;
+}
+.astrofotografia{
+    grid-area: img-a;
+}
+ .retratos{
+    grid-area: img-r;
+}
+ .paisajes{
+    grid-area: img-p;
+}
+ h2{
+    justify-self: center;
+    text-decoration: underline;
+    margin: 30px;
+    font-size: $size-h2;
+}
+h3{
+font-size: $size-h3;
+
+}
+}
+   
+//estilo de consejos para escritorio//
+.contenedor-consejo{
+    
+    gap: 10px;
+    @include estilogrid; 
+    grid-template-areas:
+    "h2-consejo h2-consejo " 
+    "imagen  video "
+    "parrafo parrafo";
+
+    .h2-consejo{
+        grid-area: h2-consejo;
+       
+    }
+    
+    .consejos-img{
+        grid-area: imagen;        
+    }
+    
+    .consejos-video{
+        grid-area: video;        
+    }
+   
+    .regla{
+        grid-area: parrafo;
+    }
+    .consejos-video{
+        display: block;
+    }
+    
+    .h2-consejo{
+        justify-self: center;
+        font-size: $size-h2;
+        text-decoration: underline;
+    }
+    .consejos-img{
+        justify-self: center;
+        height:600px;
+        width: 700px;
+        padding: 20px
+    }
+    .consejos-video{
+        
+        margin-top:150px;
+        justify-self:center;
+        
+    }
+
+
+}
+
+.regla{
+    p{
+            text-align: center;   
+            font-size: 20px;  
+            
+    }
+
+ 
+        span{
+   background-color: whitesmoke;
+   }
+}
+
+
+// estilos para la paguina contacto//
+
+.formulario{
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: auto;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    gap: 10px;
+    text-align: center; 
+    h2{
+        text-align: center;
+        font-size: $size-h2;
+        margin-bottom: 2rem;
+    }
+    form{
+        border: 1px solid black;
+        padding: 2rem;
+
+        fieldset{
+            legend{
+                text-decoration: underline;
+            }
+            .datos-nombre{
+                label{
+                    color: black;
+                    font-size:20px;
+                    
+                }
+                input{
+                    height:2rem;
+                    margin-top: 1rem;
+                }
+            }
+            .dato-mail{
+                label{
+                    color: black;
+                    font-size:20px;
+                    
+                    
+                }
+                input{
+                    height:2rem;
+                    margin-top: 1rem;
+                   
+                    
+                }
+                
+            }
+            .mensaje{
+                label{
+                    color: black;
+                    font-size:20px;
+                    
+                }
+                input{
+                    height:5rem;
+                    width: 20rem;
+                    margin-top: 1rem;
+                }
+            }
+
+                .enviar{
+                    margin-top: 10px;
+                    
+                    text-align: center;
+                  
+                }
+                    .enviar:hover{
+                    transform: scale(1.10);  
+                     color: black;
+                     height: 5px;
+                    }
+            
+        }
+
+
+           
+    }
+   
+   
+    
+    
+
+}
+}

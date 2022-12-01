@@ -1,0 +1,197 @@
+/*estilo main home para mobile*/
+
+.home{
+     .recortes{
+            display: none;
+    }
+    .recorte{
+        margin: 3.5rem;
+        display: flex;
+        flex-direction: column;
+       
+    }
+}
+
+/*estilos pagiona acerca de mi para mobile*/
+
+.acerca{
+    h2{
+        text-align: center;
+        font-size: $size-h2;
+
+    }
+    .descripcion-uno{
+        margin: 30px;
+       display: flex;
+       flex-direction: column;
+          
+    }
+    .descripcion{
+        .des-uno{
+            display: none;
+        }
+        .des-dos{
+            display:none;
+        }
+        .des-tres{
+            text-align: center;
+             margin: 30px;
+        }
+    }
+}
+
+
+
+/*estilos paguina galeria para mobile*/
+
+.galeria{
+    h2{
+        text-align: center;
+        font-size: $size-h2;
+       
+    }
+    h3{
+        text-align: left;
+        font-size:$size-h3;
+        margin-top: 1.5rem;
+        margin: 30px;
+    }
+    .astrofotografia{
+        margin: 10px;
+       
+    }
+    .retratos{
+        margin: 10px
+    }
+    .paisajes{
+        margin: 10px
+    }
+}
+
+/*estilos consejos para mobile*/
+
+.contenedor-consejo{
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+   
+    h2{
+        text-align: center;
+        font-size:$size-h2;
+       
+    }
+    .consejos-img{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+       
+     }
+     .consejos-video{
+        display:none;
+     }
+
+}
+.regla{
+    text-align: center;
+    margin: 20px;
+    p{
+        span{
+            background-color: whitesmoke;
+        }
+    }
+}
+
+/*main para contactos*/
+
+.formulario{
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    gap: 10px;
+    text-align: center; 
+    h2{
+        text-align: center;
+        font-size: $size-h2;
+        margin-bottom: 2rem;
+    }
+    form{
+        border: 1px solid black;
+        padding: 2rem;
+
+        fieldset{
+            legend{
+                text-decoration: underline;
+            }
+            .datos-nombre{
+                label{
+                    color: black;
+                    font-size:20px;
+                    
+                }
+                input{
+                    height:2rem;
+                    margin-top: 1rem;
+                }
+            }
+            .dato-mail{
+                label{
+                    color: black;
+                    font-size:20px;
+                    
+                    
+                }
+                input{
+                    height:2rem;
+                    margin-top: 1rem;
+                   
+                    
+                }
+                
+            }
+            .mensaje{
+                label{
+                    color: black;
+                    font-size:20px;
+                    
+                }
+                input{
+                    height:5rem;
+                    width: 20rem;
+                    margin-top: 1rem;
+                }
+            }
+
+                .enviar{
+                    margin-top: 10px;
+                    
+                    text-align: center;
+                  
+                }
+                    .enviar:hover{
+                    transform: scale(1.10);  
+                     color: black;
+                     height: 5px;
+                    }
+            
+        }
+
+
+           
+    }
+   
+   
+    
+    
+
+}
+
+
+
+

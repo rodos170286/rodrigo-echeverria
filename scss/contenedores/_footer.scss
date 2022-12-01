@@ -1,0 +1,27 @@
+/*esrtilos footer*/
+
+footer{
+    background-color: whitesmoke;
+
+    ul{
+        li{
+            text-align: center;
+            list-style: none;
+            padding: 15px;
+            img{
+                width: 23px;
+                height: 23px
+            }
+            a{
+                text-decoration: none;
+                     color:black;
+
+            } 
+        }
+    }
+    h2{
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+    }
+}

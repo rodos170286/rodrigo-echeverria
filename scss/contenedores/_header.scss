@@ -1,0 +1,117 @@
+/*estilo headre mobile*/
+
+header{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;  
+    align-items: center;
+    img{
+        margin: 30px; 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+        height: 70px;
+        width: 200px; 
+    }
+    img:hover{
+        filter: drop-shadow(2px 2px 5px black);
+        
+    }
+    h1{
+        display: none;
+    }
+    
+   .menu{
+       background-color: $color-fondo;
+             
+        
+        ul{
+        margin: 30px;
+        background-color: $color-fondo;
+        list-style: none;
+        display: flex;
+        padding: 10px;        
+        position: sticky; 
+          
+          li{
+              a{
+                
+                    text-decoration: none;
+                    color:black;
+                                     
+                  
+               }
+           }
+        }
+        li:hover{
+            background-color:grey;
+            transform: scale(0.9) ;
+            
+        }
+        
+
+    }
+              
+     
+}
+
+
+
+
+/*estilos de header  computadora*/
+
+@media screen and (min-width:1024px){
+header{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    img{
+        display: flex;
+        width: 6rem;
+        height: 3rem;
+        margin: 30px;
+    }
+    img:hover{
+        filter: drop-shadow(2px 2px 5px black);
+    }
+
+    h1{
+        display: block;
+        display: flex;
+        font-size:3.5rem ;
+        margin: 30px;
+
+    }
+    h1:hover{
+        filter: drop-shadow(2px 2px 5px black);
+
+    }
+    nav{
+        ul{
+        margin: 30px;
+        list-style: none;
+        display: flex;
+        padding: 25px;        
+        position: sticky;     
+          li{
+              a{
+                
+                    text-decoration: none;
+                    color:black;
+                                
+               }
+           }
+        }
+        li:hover{
+            background-color:grey;
+            transform: scale(0.9) ;
+            
+        }
+        
+
+    }
+}
+}

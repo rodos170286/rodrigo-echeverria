@@ -1,0 +1,22 @@
+// reset//
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+//importando archivos secuabdarios//
+
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/extend.scss";
+@import "contenedores/body";
+@import "contenedores/header";
+@import "contenedores/main";
+@import "contenedores/footer";
+@import "contenedores/media";
+
+h2{
+    @extend %estiloh2;
+}
