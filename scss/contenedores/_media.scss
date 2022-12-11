@@ -56,6 +56,7 @@
             width: 600px;
             height:500px;
             justify-self: center;
+
             
             
 
@@ -65,6 +66,7 @@
         .des-tres{
             grid-area: des-tres;
             margin-bottom: 20px;
+            font-size: 20px;
            
         }
     }
@@ -115,7 +117,7 @@
     font-size: $size-h2;
 }
 h3{
-font-size: $size-h3;
+    font-size: $size-h3;
 
 }
 }
@@ -188,22 +190,47 @@ font-size: $size-h3;
 // estilos para la paguina contacto//
 
 .formulario{
-    display: flex;
+   /* display: flex;
     align-items: center;
     margin-left: auto; 
     margin-right: auto;
     flex-direction: column;
     flex-wrap: wrap;  
     gap: 10px;
-    text-align: center; 
+    text-align: center; */
+    
+   justify-items: center;
+    @include estilogrid; 
+    grid-template-areas:
+    "titulo titulo "
+    "formulario imagen"   
+    
+    ;
+    h2{
+        grid-area: titulo;
+    }
+    .foto-contacto{
+        grid-area: imagen;
+    }
+    form{
+        grid-area: formulario;
+    }
     h2{
         text-align: center;
         font-size: $size-h2;
-        margin-bottom: 2rem;
+      
+    }
+    .foto-contacto{
+        display: block;
+       
+        width: 78%;
+        height:78%
     }
     form{
         border: 1px solid black;
         padding: 2rem;
+        margin-left: 1rem;
+        text-align: center;
 
         fieldset{
             legend{

@@ -6,14 +6,17 @@ header{
     flex-direction: column; 
     flex-wrap: wrap;  
     align-items: center;
-    img{
-        margin: 30px; 
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap; 
-        height: 70px;
-        width: 200px; 
-    }
+   
+
+       img{
+           margin: 30px; 
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap; 
+           height: 70px;
+           width: 200px; 
+    
+  }
     img:hover{
         filter: drop-shadow(2px 2px 5px black);
         
